@@ -57,6 +57,38 @@ body {
   text-underline-offset: 6px;
 }
 
+.faq-item {
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.8rem;
+}
+
+.faq-question {
+  background: none;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.6rem 0;
+}
+
+.faq-answer {
+  padding-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Rotación de flecha cuando el collapse está abierto */
+button[aria-expanded="true"] .icon-toggle {
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+}
+
+.icon-toggle {
+  transition: transform 0.3s;
+}
+
+
+
 /* 4. HERO */
 .row.p-5 {
   min-height: 90vh;
@@ -75,6 +107,15 @@ h1 {
   font-size: 6rem;
   margin-bottom: 20px;
   color: var(--dark-color);
+}
+
+h2-cta {
+  color: black;
+  font-weight: bold;
+}
+
+p-cta {
+  color: rgb(255, 255, 255);
 }
 
 p {
@@ -107,6 +148,10 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
+}
+
+.bg-cta {
+  background-color: #F28705;
 }
 
 /* Botones */
@@ -276,7 +321,6 @@ section h2::after {
   width: 100%;
   display: block;
   margin-bottom: 1rem;
-  border-radius: 8px;
 }
 
 .card-text {
@@ -471,8 +515,80 @@ img.rounded-circle {
   color: white; /* o el color de texto que prefieras */
 }
 
+#nosotros {
+  scroll-margin-top: 80px;
+}
 
+#quetraelacaja {
+  scroll-margin-top: 100px;
+}
 
+#suscripciones{
+  scroll-margin-top: 50px;
+}
+
+#testimonios {
+  scroll-margin-top: 80px;
+}
+
+#geekswap {
+  scroll-margin-top: 80px;
+}
+
+#faq {
+  scroll-margin-top: 80px;
+}
+
+#contacto {
+  scroll-margin-top: 80px;
+}
+
+.footer-eco {
+  background-color: #fcedda; /* fondo crema claro */
+  color: #222;
+  font-size: 0.95rem;
+}
+
+.footer-eco h5,
+.footer-eco h6 {
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.footer-eco a {
+  color: #222;
+  text-decoration: none;
+}
+
+.footer-eco a:hover {
+  text-decoration: underline;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links li::before {
+  content: "›";
+  color: #c96c1d;
+  margin-right: 6px;
+  font-weight: bold;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #ffedd5;
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 1.2rem;
+  color: #000;
+  transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #f4c07a;
+}
 
 
 /* ============================== */
