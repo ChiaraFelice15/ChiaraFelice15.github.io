@@ -18,8 +18,14 @@ body {
 }
 
 /* 3. NAVBAR */
-.navbar {
+.navbar-home1 {
   background-color: transparent; 
+  transition: background-color 0.3s, box-shadow 0.3s;
+  padding: 15px 0;
+}
+
+.navbar-home2 {
+  background-color: rgba(105, 50, 222, 0.9); 
   transition: background-color 0.3s, box-shadow 0.3s;
   padding: 15px 0;
 }
@@ -150,8 +156,19 @@ p {
   background-position: center top;
 }
 
+.bgTestigos {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(MATERIAL/fondoSuscripcionesVioleta.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -130px;
+}
+
 .bg-cta {
   background-color: #F28705;
+  height: 400px;
+  position: r;
 }
 
 /* Botones */
@@ -164,14 +181,9 @@ p {
   font-size: 1.2rem;
   border: 2px solid black !important;
   background-color: #00e53f; /* Verde brillante base */
-  
+    border-radius: 0 !important;
 }
 
-.btn {
-  border-radius: 0 !important;
-  border: 15px solid black;
-
-}
 
 .btn-dark {
   background-color: var(--primary-color);
@@ -179,7 +191,8 @@ p {
 }
 
 .btn-dark:hover {
-  background-color: #27ae46;
+  background-color: #F2B705;
+  color: #000;
 }
 
 .btn-outline-dark {
@@ -204,6 +217,11 @@ p {
   text-decoration: none;
 }
 
+.btn-nav:hover {
+  background-color: #F2B705;
+  color: #000;
+}
+
 /* 5. SECCIONES */
 section {
   padding: 100px 0;
@@ -213,15 +231,6 @@ section h2 {
   font-size: 2.5rem;
   margin-bottom: 30px;
   position: relative;
-}
-
-section h2::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: var(--primary-color);
-  margin: 20px auto 0;
 }
 
 /* 6. CARDS */
@@ -271,7 +280,7 @@ section h2::after {
   padding: 0.6rem 0; /* más espacio entre ítems */
   border-top: 1px solid rgba(255, 255, 255, 0.2); /* línea sutil */
   font-family: 'Barlow', sans-serif;
-  font-size: 0.95rem;
+  font-size: 1.2rem !important;
   color: white;
 }
 
@@ -283,12 +292,12 @@ section h2::after {
 
 .precio-boton {
   display: flex;
-  justify-content: space-between;
+  justify-content: align-items-center;
   align-items: center;
   padding: 1rem;
   color: white;
   font-family: 'Arial Black', sans-serif;
-  gap: 1rem;
+  gap: 90px;
 }
 
 .precio-texto {
@@ -312,6 +321,12 @@ section h2::after {
   margin: 0; /* eliminar márgenes */
 }
 
+.valor2 {
+  color: black;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
 .masonry__container {
   column-count: 4;
   column-gap: 1rem;
@@ -325,6 +340,14 @@ section h2::after {
 
 .card-text {
   color: #6c757d;
+}
+
+#inicio2 {
+  padding-top: 140px; /* o más si querés */
+}
+
+#inicio2 img[src*="LegendaryCrateTitulo"] {
+  margin-bottom: 20px;
 }
 
 /* 7. TESTIMONIOS */
@@ -351,7 +374,7 @@ form button.btn-primary {
 
 /* 9. FOOTER */
 footer {
-  background-color: var(--dark-color);
+  background-color: #edd8bc;
   color: #ffffff;
   font-size: 0.9rem;
 }
@@ -410,7 +433,7 @@ img.rounded-circle {
 
 .h3-custom {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.4;
   color: var(--dark-color);
 }
@@ -423,6 +446,12 @@ img.rounded-circle {
 
 .h5-custom {
   font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--dark-color);
+}
+
+.h6-custom {
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--dark-color);
 }
@@ -444,6 +473,20 @@ img.rounded-circle {
   font-size: 1.25rem;
   font-weight: 400;
   color: var(--secondary-color);
+}
+
+.offset-texto {
+  margin-top: 60px; /* ajustá el valor según lo que necesites */
+}
+
+#testigosdetalle .h6-custom,
+#testigosdetalle .h5-custom,
+#testigosdetalle .h3-custom {
+  color: white !important;
+}
+
+#testigosdetalle .p-custom {
+  color: rgb(206, 206, 206) !important;
 }
 
 /* FONDOS E IMÁGENES */
@@ -544,7 +587,7 @@ img.rounded-circle {
 }
 
 .footer-eco {
-  background-color: #fcedda; /* fondo crema claro */
+  background-color: #edd8bc; /* fondo crema claro */
   color: #222;
   font-size: 0.95rem;
 }
@@ -578,18 +621,48 @@ img.rounded-circle {
 .social-icons a {
   display: inline-block;
   margin-right: 10px;
-  background-color: #ffedd5;
   border-radius: 50%;
   padding: 8px;
   font-size: 1.2rem;
   color: #000;
-  transition: background-color 0.3s;
+  opacity: 0.7;
 }
 
 .social-icons a:hover {
-  background-color: #f4c07a;
+  transform: scale(1.1);
+  opacity: 1;
+  transition: transform 0.5s ease;
 }
 
+h2::after {
+  display: none !important;
+}
+
+.slider{
+  width: 90vw;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+  
+}
+
+.slider .slide-track{
+  display: flex;
+  gap: 105px;
+  animation: scroll 40s linear infinite;
+  -webkit-animation:scroll 40s linear infinite;
+  width:calc(245px * 16);
+}
+
+.slider.slide{
+  width: 150px;
+  flex-shrink: 0;
+  background-color: #ECECEC;
+}
+
+.slider .slide img {
+  height: 45px;
+}
 
 /* ============================== */
 /* MEDIA QUERIES */
@@ -622,3 +695,13 @@ img.rounded-circle {
   }
 }
 
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-150px * 8));
+    transform: translateX(calc(-150px * 8));
+  }
+}
