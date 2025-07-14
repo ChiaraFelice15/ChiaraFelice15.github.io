@@ -44,19 +44,16 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <!-- Ítems del menú -->
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link active" href="#hero">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
-        <li class="nav-item"><a class="nav-link" href="#quetraelacaja">¿Qué hay en mi caja?</a></li>
-        <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
-        <li class="nav-item"><a class="nav-link" href="#geekswap">GeekSwap</a></li>
+        <li class="nav-item"><a class="nav-link" href="#inicio2">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#beneficios">Beneficios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testigosdetalle">Testimonios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#otrassuscripciones">Otras suscripciones</a></li>
         <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
       </ul>
     </div>
-    <div class="d-flex gap-3">
-        <a href="#suscripciones" class="btn-nav">Suscribite</a>
-      </div>
   </div>
 </nav>
 <!-- /NAVBAR -->
@@ -124,7 +121,7 @@
 
 
 <!-- ICONOS: BENEFICIOS -->
-<section id="iconos">
+<section id="beneficios">
   <div class="container section-spacing text-center">
     <h2 class="h2-custom">Nuestros beneficios</h2>
     <div class="row justify-content-center g-1">
@@ -145,34 +142,114 @@
 </section>
 <!-- /ICONOS -->
 
-<!-- SECCIÓN B: Imagen izquierda, texto derecha -->
-<section id="testigosdetalle" class="section-spacing container; bgTestigos">
-  <div class="row align-items-center">
-    <!-- Columna de imagen -->
-    <div class="col-lg-6 text-center mb-4 mb-lg-0">
-      <img src="MATERIAL/Testigo1.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
-    </div>
-   <!-- Columna de texto -->
-<div class="col-lg-6 offset-texto texto-blanco">
-  <h3 class="h3-custom mb-0">Valentina Romero</h3>
-  <p class="p-custom mb-3">14 de Junio de 2025</p>
-  <div class="col-lg-6 mb-4 mb-lg-0">
-    <h6 class="h6-custom mb-1">Fanática del anime y gamer desde los 12 años.</h6>
-    <p class="p-custom mb-3">“Estoy fascinadx con Legendary Crate! Cada mes es una sorpresa que supera mis expectativas.”</p>
-    <div class="text-warning fs-5">
-      <i class="bi bi-star-fill"></i>
-      <i class="bi bi-star-fill"></i>
-      <i class="bi bi-star-fill"></i>
-      <i class="bi bi-star-fill"></i>
-      <i class="bi bi-star-fill"></i>
-    </div>
-  </div>
-</div>
+<!-- SECCIÓN B: Carrusel de testimonios -->
+<section id="testigosdetalle" class="carousel slide bgTestigos" data-bs-ride="carousel" data-bs-interval="2000">
+  <div id="carouselTestigos" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
 
+      <!-- Testimonio 1 -->
+      <div class="carousel-item active">
+        <div class="row align-items-center reducir-gap">
+          <div class="col-lg-6 text-center">
+            <img src="MATERIAL/Testigo1.png" class="img-fluid img-rounded img-testimonio" alt="Valentina Romero">
+          </div>
+          <div class="col-lg-6 offset-texto texto-blanco">
+            <h3 class="h3-custom mb-0">Valentina Romero</h3>
+            <p class="p-custom mb-3">8 de Octubre de 2023</p>
+            <h6 class="h6-custom mb-1">Fanática del anime y gamer desde los 12 años.</h6>
+            <p class="p-custom mb-3">“Estoy fascinadx con Legendary Crate! Cada mes es una sorpresa <br>que supera mis expectativas.”</p>
+            <div class="text-warning fs-5">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonio 2 -->
+      <div class="carousel-item">
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-center">
+            <img src="MATERIAL/Testigo2.png" class="img-fluid img-rounded img-testimonio" alt="Mateo Sánchez">
+          </div>
+          <div class="col-lg-6 offset-texto texto-blanco">
+            <h3 class="h3-custom mb-0">María Sánchez</h3>
+            <p class="p-custom mb-3">20 de Julio de 2022</p>
+            <h6 class="h6-custom mb-1">Coleccionista de cómics y figuras vintage.</h6>
+            <p class="p-custom mb-3">“Recibir la Legendary Crate me devolvió la emoción de esperar <br>algo cada mes. Es como navidad todo el año.”</p>
+            <div class="text-warning fs-5">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonio 3 -->
+      <div class="carousel-item">
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-center">
+            <img src="MATERIAL/Testigo3.png" class="img-fluid img-rounded img-testimonio" alt="Camila Torres">
+          </div>
+          <div class="col-lg-6 offset-texto texto-blanco">
+            <h3 class="h3-custom mb-0">Camila Torres</h3>
+            <p class="p-custom mb-3">2 de Febrero de 2025</p>
+            <h6 class="h6-custom mb-1">Streamer y fan de Marvel desde niña.</h6>
+            <p class="p-custom mb-3">“Me encantan los detalles exclusivos que trae cada caja. <br>Siempre hay algo que quiero mostrar en mis streams.”</p>
+            <div class="text-warning fs-5">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonio 4 -->
+      <div class="carousel-item">
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-center">
+            <img src="MATERIAL/Testigo4.png" class="img-fluid img-rounded img-testimonio" alt="Bruno Díaz">
+          </div>
+          <div class="col-lg-6 offset-texto texto-blanco">
+            <h3 class="h3-custom mb-0">Bruna Díaz</h3>
+            <p class="p-custom mb-3">10 de Mayo de 2024</p>
+            <h6 class="h6-custom mb-1">Fan de los juegos retro y el coleccionismo pop.</h6>
+            <p class="p-custom mb-3">“Legendary Crate logra sorprenderme con cada caja. <br>Es lo mejor que me pasó como coleccionista.”</p>
+            <div class="text-warning fs-5">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controles del carrusel -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestigos" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselTestigos" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
 </section>
 
+
 <!-- PLANES DE SUSCRIPCIÓN: Sección con 3 opciones destacadas -->
-<section id="suscripciones">
+<section id="otrassuscripciones">
   <div class="container section-spacing text-center">
   <h2 class="h2-custom">Otras opciones</h2>
   <div class="row mt-5 justify-content-center">
@@ -180,7 +257,11 @@
 <!-- Card: Starter Pack -->
 <div class="col-md-4 mb-4">
   <div class="card card-trapezoide">
-    <img src="MATERIAL/StarterPack.png" class="img-fluid img-rounded" alt="Plan Básico">
+    <img src="MATERIAL/StarterPack.png" 
+     onmouseover="this.src='MATERIAL/StarterPackIluminado.png'" 
+     onmouseout="this.src='MATERIAL/StarterPack.png'" 
+     class="img-fluid img-rounded" 
+     alt="Plan Básico">
     <ul class="list-unstyled text-center mx-auto beneficios" style="max-width: 250px; margin-top: 40px;">
       <li>1 figura exclusiva</li>
       <li>1 portada exclusiva</li>
@@ -192,7 +273,7 @@
     <div class="precio-boton">
       <div class="precio-texto">
         <p class="p-custom">Compra única</p>
-        <div class="valor">$18.000</div>
+        <div class="valor">$30.000</div>
       </div>
       <a href="#" class="btn btn-dark mt-4">Elegir plan</a>
     </div>
@@ -203,9 +284,9 @@
 <!-- Card: Hero Edition -->
 <div class="col-md-4 mb-4">
   <div class="card card-trapezoide">
-
-    <img src="MATERIAL/HeroEdition.png" class="img-fluid img-rounded" alt="Plan Pro">
-
+    <img src="MATERIAL/HeroEdition.png" class="img-fluid img-rounded" alt="Plan Pro"
+    onmouseover="this.src='MATERIAL/HeroEditionIluminado.png'"
+    onmouseout="this.src='MATERIAL/HeroEdition.png'">
     <ul class="list-unstyled text-center mx-auto beneficios" style="max-width: 250px; margin-top: 40px;">
       <li>1 figura exclusiva</li>
       <li>2 portadas exclusivas</li>
@@ -217,7 +298,7 @@
     <div class="precio-boton">
       <div class="precio-texto">
         <p class="p-custom">/ x6 meses</p>
-        <div class="valor">$22.000</div>
+        <div class="valor">$42.000</div>
       </div>
       <a href="#" class="btn btn-dark mt-4">Elegir plan</a>
     </div>
@@ -367,11 +448,17 @@
 <!-- /FAQS -->
 
 <!-- CONTACT FORM: Formulario de contacto -->
-<section id="contacto" class="section-spacing container text-center">
-  <h2 class="h2-custom">Formulario de Contacto</h2>
-  <p class="p-custom">Envía un mensaje directamente desde la web.</p>
-  <div class="row justify-content-center">
-    <div class="col-md-6">
+<section id="contacto" class="section-spacing container">
+  <div class="row align-items-center">
+    <!-- Columna de imagen -->
+    <div class="col-lg-6 text-center mt-4 mt-lg-0">
+      <img src="MATERIAL/Pcontacto.png" class="img-fluid img-rounded w-75" alt="Imagen contacto">
+    </div>
+
+    <!-- Columna de texto + formulario -->
+    <div class="col-lg-6">
+      <h2 class="h2-custom mt-5">Formulario de Contacto</h2>
+      <p class="p-custom">Envía un mensaje directamente desde la web.</p>
       <form>
         <div class="mb-3">
           <input type="text" class="form-control" placeholder="Tu nombre">
@@ -387,10 +474,8 @@
     </div>
   </div>
 </section>
-<!-- /CONTACT FORM -->
 
 <!-- FOOTER: Pie de página -->
-
 <footer class="footer-eco py-5 mt-5">
   <div class="container">
     <div class="row mt-4 mb-0">
@@ -407,9 +492,9 @@
       <div class="col-md-3 mb-4">
         <h6 class="fw-bold text-uppercase">Accesos rápidos</h6>
         <ul class="list-unstyled footer-links">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#inicio2">Inicio</a></li>
+          <li><a href="#beneficios">Beneficios</a></li>
+          <li><a href="#testigosdetalle">Testimonios</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
       </div>
@@ -418,7 +503,7 @@
       <div class="col-md-3 mb-4">
         <h6 class="fw-bold text-uppercase">Seguinos</h6>
         <p class="mb-3">
-          En ColecClub vivimos la cultura pop como una experiencia compartida. Sumate a la comunidad.
+          En ColecClub vivimos la cultura pop<br>como una experiencia compartida. <br>Sumate a la comunidad.
         </p>
         <div class="social-icons">
           <a href="#"><i class="bi bi-x"></i></a>
@@ -446,7 +531,6 @@
     <p class="p-custom">© 2025 Belluccia 3 - Chiara Felice. Todos los derechos reservados.</p>
   </div>
 </footer>
-
 
 <!-- Bootstrap Bundle JS (incluye Popper) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>

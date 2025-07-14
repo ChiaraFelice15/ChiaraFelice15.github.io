@@ -52,12 +52,13 @@ body {
 }
 
 .nav-link:hover {
-  color: rgb(218, 218, 226);
+  color: rgb(188, 188, 188);
+  font-weight: 600;
 }
 
 .navbar .nav-link.active {
   color: #ffffff;
-  font-weight: 750;
+  font-weight: 700;
   font-size: 0.95rem;
   text-decoration: underline ;
   text-underline-offset: 6px;
@@ -93,6 +94,57 @@ button[aria-expanded="true"] .icon-toggle {
   transition: transform 0.3s;
 }
 
+.mySwiperCaja {
+  padding: 40px 0;
+}
+.mySwiperCaja .swiper-slide {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  opacity: 0.5;
+  transform: scale(0.85); /* los del costado */
+  padding-top: 40px; /* Aumentá este valor según lo que necesites */
+}
+.mySwiperCaja .swiper-slide-active {
+  transform: scale(1.15); /* el central, más grande */
+  opacity: 1;
+}
+.mySwiperCaja .swiper-slide img {
+  transition: transform 0.4s ease;
+  transform: scale(0.85);
+  opacity: 0.5;
+}
+
+.mySwiperCaja .swiper-slide-prev img,
+.mySwiperCaja .swiper-slide-next img {
+  transform: scale(0.95);
+  opacity: 0.7;
+}
+
+.mySwiperCaja .swiper-slide-active img {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.mySwiperCaja .swiper-slide-prev,
+.mySwiperCaja .swiper-slide-next {
+  transform: scale(0.9);  /* opcional: un poco más grande que el resto */
+  opacity: 0.7;
+}
+
+.swiper-pagination-bullet {
+  background: #999;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+.swiper-pagination-bullet-active {
+  background: #000; /* o el color de tu marca */
+  opacity: 1;
+}
+
+.swiper-pagination {
+  margin-bottom: -14px;  /* podés ajustar el valor */
+  position: relative;
+  z-index: 10;
+}
 
 
 /* 4. HERO */
@@ -103,6 +155,13 @@ button[aria-expanded="true"] .icon-toggle {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
+.hero-img {
+  max-width: 110%;   /* La agranda más allá del ancho del contenedor */
+  transform: scale(1.2); /* Alternativa para escalarla visualmente */
+  transition: transform 0.3s ease;
+}
+
 
 h1, h2, h3, h4, h5 {
   font-weight: 600;
@@ -149,9 +208,9 @@ p {
 
 .bgIconos {
   width: 100%;
-  min-height: 100vh;
+  height: auto;
   background-image: url(MATERIAL/fondoCFLC.png);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center top;
 }
@@ -160,16 +219,19 @@ p {
   width: 100%;
   min-height: 100vh;
   background-image: url(MATERIAL/fondoSuscripcionesVioleta.png);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center -130px;
 }
 
 .bg-cta {
-  background-color: #F28705;
+  background-image: url(MATERIAL/fondoCTA.png);
   height: 400px;
-  position: r;
+  position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
+
 
 /* Botones */
 .btn {
@@ -297,7 +359,7 @@ section h2 {
   padding: 1rem;
   color: white;
   font-family: 'Arial Black', sans-serif;
-  gap: 90px;
+  gap: 80px;
 }
 
 .precio-texto {
@@ -549,7 +611,7 @@ img.rounded-circle {
   clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
   
 }
- hola hola
+
 .card-trapezoide {
   background-color: #040420; /* azul oscuro */
   clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
@@ -570,7 +632,7 @@ img.rounded-circle {
   scroll-margin-top: 50px;
 }
 
-#testimonios {
+#testigosdetalles {
   scroll-margin-top: 80px;
 }
 
@@ -592,14 +654,20 @@ img.rounded-circle {
   font-size: 0.95rem;
 }
 
+.footer-eco * {
+  color: #000 !important;
+}
+
+
 .footer-eco h5,
-.footer-eco h6 {
+.footer-eco h6
+.footer-eco p {
   color: #000;
   margin-bottom: 1rem;
 }
 
 .footer-eco a {
-  color: #222;
+  color: #000;
   text-decoration: none;
 }
 
@@ -643,6 +711,7 @@ h2::after {
   height: auto;
   margin: auto;
   overflow: hidden;
+
   
 }
 
@@ -662,6 +731,24 @@ h2::after {
 
 .slider .slide img {
   height: 45px;
+}
+
+.slider .slide img {
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.slider .slide img:hover {
+  opacity: 0.9;
+}
+
+
+.img-testimonio {
+  max-width: 400px;  /* o 250px, como prefieras */
+  height: auto;
+  margin: 0 auto;    /* centrado horizontal */
+  opacity: 1;
+  margin-right: 1;
 }
 
 /* ============================== */
@@ -705,3 +792,4 @@ h2::after {
     transform: translateX(calc(-150px * 8));
   }
 }
+
