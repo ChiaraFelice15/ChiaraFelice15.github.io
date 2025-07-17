@@ -785,6 +785,12 @@ h2::after {
   margin-right: auto;
 }
 
+#beneficios img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 .slider{
   width: 90vw;
