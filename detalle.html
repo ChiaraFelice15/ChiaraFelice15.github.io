@@ -50,7 +50,7 @@
     <!-- Ítems del menú -->
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="home.html">Inicio</a></li>
         <li class="nav-item"><a class="nav-link" href="#beneficios">Beneficios</a></li>
         <li class="nav-item"><a class="nav-link" href="#testigosdetalle">Testimonios</a></li>
         <li class="nav-item"><a class="nav-link" href="#otrassuscripciones">Otras suscripciones</a></li>
@@ -154,11 +154,11 @@
 
       <!-- Testimonio 1 -->
       <div class="carousel-item active">
-        <div class="row align-items-center">
+        <div class="row flex-column-reverse flex-lg-row align-items-center">
           <div class="col-lg-6 text-center">
             <img src="MATERIAL/Testigo1.png" class="img-fluid img-rounded img-testimonio" alt="Valentina Romero">
           </div>
-          <div class="col-lg-6 offset-texto texto-blanco">
+          <div class="col-lg-6 offset-texto texto-blanco text-center text-lg-start">
             <h3 class="h3-custom mb-0">Valentina Romero</h3>
             <p class="p-custom mb-3">8 de Octubre de 2023</p>
             <h6 class="h6-custom mb-1">Fanática del anime y gamer desde los 12 años.</h6>
@@ -172,11 +172,11 @@
 
       <!-- Testimonio 2 -->
       <div class="carousel-item">
-        <div class="row align-items-center">
+        <div class="row flex-column-reverse flex-lg-row align-items-center">
           <div class="col-lg-6 text-center">
             <img src="MATERIAL/Testigo2.png" class="img-fluid img-rounded img-testimonio" alt="Mateo Sánchez">
           </div>
-          <div class="col-lg-6 offset-texto texto-blanco">
+          <div class="col-lg-6 offset-texto texto-blanco text-center text-lg-start">
             <h3 class="h3-custom mb-0">María Sánchez</h3>
             <p class="p-custom mb-3">20 de Julio de 2022</p>
             <h6 class="h6-custom mb-1">Coleccionista de cómics y figuras vintage.</h6>
@@ -193,11 +193,11 @@
 
       <!-- Testimonio 3 -->
       <div class="carousel-item">
-        <div class="row align-items-center">
+        <div class="row flex-column-reverse flex-lg-row align-items-center">
           <div class="col-lg-6 text-center">
             <img src="MATERIAL/Testigo3.png" class="img-fluid img-rounded img-testimonio" alt="Camila Torres">
           </div>
-          <div class="col-lg-6 offset-texto texto-blanco">
+          <div class="col-lg-6 offset-texto texto-blanco text-center text-lg-start">
             <h3 class="h3-custom mb-0">Camila Torres</h3>
             <p class="p-custom mb-3">2 de Febrero de 2025</p>
             <h6 class="h6-custom mb-1">Streamer y fan de Marvel desde niña.</h6>
@@ -215,11 +215,11 @@
 
       <!-- Testimonio 4 -->
       <div class="carousel-item">
-        <div class="row align-items-center">
+        <div class="row flex-column-reverse flex-lg-row align-items-center">
           <div class="col-lg-6 text-center">
             <img src="MATERIAL/Testigo4.png" class="img-fluid img-rounded img-testimonio" alt="Bruno Díaz">
           </div>
-          <div class="col-lg-6 offset-texto texto-blanco">
+          <div class="col-lg-6 offset-texto texto-blanco text-center text-lg-start">
             <h3 class="h3-custom mb-0">Bruna Díaz</h3>
             <p class="p-custom mb-3">10 de Mayo de 2024</p>
             <h6 class="h6-custom mb-1">Fan de los juegos retro y el coleccionismo pop.</h6>
@@ -247,6 +247,7 @@
     </button>
   </div>
 </section>
+
 
 
 <!-- PLANES DE SUSCRIPCIÓN: Sección con 3 opciones destacadas -->
@@ -333,58 +334,43 @@
 </section>
 
 <!-- MARCAS -->
-<div class="slider mb-5 mt-5">
+<!-- Versión desktop con animación -->
+<div class="slider mb-5 mt-5 d-none d-md-block" >
   <div class="slide-track">
-    <div class="slide">
-      <img src="MATERIAL/logo_marvel.png" alt="Marvel">
-    </div>
-    <div class="slide">
-      <img src="MATERIAL/logo_starwars.png" alt="Star Wars">
-    </div>
-    <div class="slide">
-      <img src="MATERIAL/logo_funko.png" alt="Funko Pop">
-    </div>
-    <div class="slide">
-      <img src="MATERIAL/logo_harrypotter.png" alt="Harry Potter">
-    </div>
-    <div class="slide">
-      <img src="MATERIAL/logo_disney.png" alt="Disney">
-    </div>
-    <div class="slide">
-      <img src="MATERIAL/logo_naruto.png" alt="Naruto">
-    </div>
-    <div class="slide">
-      <img src="MATERIAL/logo_dc.png" alt="DC">
-    </div>
-    <div class="slide">
-      <img src="MATERIAL/logo_pokemon.png" alt="Pokemon">
-    </div>
-    <div class="slide">
-      <img src="MATERIAL/logo_marvel.png" alt="Marvel">
-    </div>
-    <div class="slide">
-      <img src="MATERIAL/logo_starwars.png" alt="Star Wars">
-    </div>
-    <div class="slide">
-      <img src="MATERIAL/logo_funko.png" alt="Funko Pop">
-    </div>
-    <div class="slide">
-      <img src="MATERIAL/logo_harrypotter.png" alt="Harry Potter">
-    </div>
-    <div class="slide">
-      <img src="MATERIAL/logo_disney.png" alt="Disney">
-    </div>
-    <div class="slide">
-      <img src="MATERIAL/logo_naruto.png" alt="Naruto">
-    </div>
-    <div class="slide">
-      <img src="MATERIAL/logo_dc.png" alt="DC">
-    </div>
-    <div class="slide">
-      <img src="MATERIAL/logo_pokemon.png" alt="Pokemon">
-    </div>
+    <div class="slide"><img src="MATERIAL/logo_marvel.png" alt="Marvel"></div>
+    <div class="slide"><img src="MATERIAL/logo_starwars.png" alt="Star Wars"></div>
+    <div class="slide"><img src="MATERIAL/logo_funko.png" alt="Funko Pop"></div>
+    <div class="slide"><img src="MATERIAL/logo_harrypotter.png" alt="Harry Potter"></div>
+    <div class="slide"><img src="MATERIAL/logo_disney.png" alt="Disney"></div>
+    <div class="slide"><img src="MATERIAL/logo_naruto.png" alt="Naruto"></div>
+    <div class="slide"><img src="MATERIAL/logo_dc.png" alt="DC"></div>
+    <div class="slide"><img src="MATERIAL/logo_pokemon.png" alt="Pokemon"></div>
+    <!-- repetidos para loop -->
+    <div class="slide"><img src="MATERIAL/logo_marvel.png" alt="Marvel"></div>
+    <div class="slide"><img src="MATERIAL/logo_starwars.png" alt="Star Wars"></div>
+    <div class="slide"><img src="MATERIAL/logo_funko.png" alt="Funko Pop"></div>
+    <div class="slide"><img src="MATERIAL/logo_harrypotter.png" alt="Harry Potter"></div>
+    <div class="slide"><img src="MATERIAL/logo_disney.png" alt="Disney"></div>
+    <div class="slide"><img src="MATERIAL/logo_naruto.png" alt="Naruto"></div>
+    <div class="slide"><img src="MATERIAL/logo_dc.png" alt="DC"></div>
+    <div class="slide"><img src="MATERIAL/logo_pokemon.png" alt="Pokemon"></div>
   </div>
 </div>
+
+<!-- Versión mobile con dos filas -->
+<div class="container d-block d-md-none mb-5 mt-5 mobile-logos" data-aos="fade-up" data-aos-delay="350" data-aos-duration="1000" data-aos-once="true">
+  <div class="row text-center gy-4 justify-content-center align-items-center">
+    <div class="col-4 d-flex justify-content-center align-items-center"><img src="MATERIAL/logo_marvel.png" class="img-fluid" alt="Marvel"></div>
+    <div class="col-4 d-flex justify-content-center align-items-center"><img src="MATERIAL/logo_starwars.png" class="img-fluid" alt="Star Wars"></div>
+    <div class="col-4 d-flex justify-content-center align-items-center"><img src="MATERIAL/logo_funko.png" class="img-fluid" alt="Funko Pop"></div>
+    <div class="col-4 d-flex justify-content-center align-items-center"><img src="MATERIAL/logo_harrypotter.png" class="img-fluid" alt="Harry Potter"></div>
+    <div class="col-4 d-flex justify-content-center align-items-center"><img src="MATERIAL/logo_disney.png" class="img-fluid" alt="Disney"></div>
+    <div class="col-4 d-flex justify-content-center align-items-center"><img src="MATERIAL/logo_naruto.png" class="img-fluid" alt="Naruto"></div>
+    <div class="col-4 d-flex justify-content-center align-items-center"><img src="MATERIAL/logo_dc.png" class="img-fluid" alt="DC"></div>
+    <div class="col-4 d-flex justify-content-center align-items-center"><img src="MATERIAL/logo_pokemon.png" class="img-fluid" alt="Pokemon"></div>
+  </div>
+</div>
+
 
 <!-- FAQS: Preguntas frecuentes -->
 <section id="faq" class="section-spacing container mt-5">
