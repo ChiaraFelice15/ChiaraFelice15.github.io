@@ -29,12 +29,6 @@ body {
     overflow: hidden; /* Oculta cualquier contenido que se desborde */
 }
 
-.row {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-
 html, body {
   margin: 0;
   padding: 0;
