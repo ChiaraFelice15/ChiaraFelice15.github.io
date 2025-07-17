@@ -29,6 +29,19 @@ body {
     overflow: hidden; /* Oculta cualquier contenido que se desborde */
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* 3. NAVBAR */
 .navbar-home1 {
   background-color: transparent; 
