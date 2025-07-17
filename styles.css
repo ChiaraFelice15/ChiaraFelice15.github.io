@@ -779,6 +779,13 @@ h2::after {
   display: none !important;
 }
 
+#iconos img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 .slider{
   width: 90vw;
   height: auto;
